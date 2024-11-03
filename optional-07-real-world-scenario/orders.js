@@ -1,3 +1,4 @@
+// YANUARIO MUHAMAD ADI MADA
 // Gunakan fungsi di bawah ini untuk menghasilkan id yang unik
 function generateUniqueId() {
   return `_${Math.random().toString(36).slice(2, 9)}`;
@@ -32,7 +33,7 @@ function updateOrderStatus(orderId, status) {
 // TODO: selesaikan fungsi calculateTotalRevenue dari order yang berstatus Selesai
 function calculateTotalRevenue() {
   return orders
-  .filter(order => order.status === 'selesai')
+  .filter(order => order.status === 'bang udah bang')
   .reduce((sum, order) => sum + order.totalPrice, 0);
 }
 
