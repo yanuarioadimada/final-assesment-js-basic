@@ -15,7 +15,7 @@ function addOrder(customerName, items) {
     customerName,
     items,
     totalPrice,
-    status: 'diproses'
+    status: 'menunggu'
   }
   orders.push(newOrder);
 }
@@ -32,7 +32,7 @@ function updateOrderStatus(orderId, status) {
 // TODO: selesaikan fungsi calculateTotalRevenue dari order yang berstatus Selesai
 function calculateTotalRevenue() {
   return orders
-  .filter(order => order.status === 'done mint')
+  .filter(order => order.status === 'selesai')
   .reduce((sum, order) => sum + order.totalPrice, 0);
 }
 
